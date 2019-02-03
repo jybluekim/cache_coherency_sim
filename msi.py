@@ -19,7 +19,7 @@ class Bus:
     def __init__(self):
         self.p_lst = []
         self.mem_size = 10
-        self.mem = [ 0 for i in range(self.mem_size)] 
+        self.mem = [ 100+i for i in range(self.mem_size)] 
     def add_processor(self, p):
         self.p_lst.append(p)
 
@@ -27,11 +27,15 @@ class Bus:
         for i in self.p_lst:
             if i != p:
                 i.BusRd(addr)
+            else:
+                return self.mem[addr]
 
     def BusRdX(self, p, addr):
         for i in self.p_lst:
             if i != p:
                 i.BusRdX(addr)
+            else:
+                return self.mem[addr]
 
     def BusWr(self, addr, val ):
         self.mem[addr] = val
@@ -58,13 +62,15 @@ class Processor:
 
     def PrRd(self, addr):
         if self.cache[addr]["status"] == "I":
-            self.bus.BusRd(self, addr)
+            ret = self.bus.BusRd(self, addr)
             self.cache[addr]["status"] = "S"
+            self.cache[addr]["data"] = ret
         elif self.cache[addr]["status"] == "M":
             pass # no need to do anything
         elif self.cache[addr]["status"] == "S":
-            self.bus.BusRd(self, addr)
+            ret = self.bus.BusRd(self, addr)
             self.cache[addr]["status"] = "M"
+            self.cache[addr]["data"] = ret
 
     # this is when you get BusRd as input (i.e. other processor is issuing BusRd and the Bus is broadcasting it)
     def BusRd(self, addr):
@@ -79,15 +85,17 @@ class Processor:
 
     def PrWr(self, addr, val):
         if self.cache[addr]["status"] == "I":
-            self.bus.BusRdX(self, addr)
+            ret = self.bus.BusRdX(self, addr)
             self.cache[addr]["data"] = val
             self.cache[addr]["status"] = "M"
+
         elif self.cache[addr]["status"] == "M":
             pass
         elif self.cache[addr]["status"] == "S":
-            self.bus.BusRdX(self, addr)
+            ret = self.bus.BusRdX(self, addr)
             self.cache[addr]["data"] = val
             self.cache[addr]["status"] = "M"
+            
 
     def BusRdX(self, addr):
         if self.cache[addr]["status"] == "I":
@@ -145,7 +153,16 @@ Possible scenario
 '''
 
 
+def dump(p_lst, bus):
+    for p in p_lst:
+        print (p.name)
+        print (p.cache)
+    print (bus.mem)
+
 if __name__ == "__main__":
+    
+    
+    
     p1 = Processor("p1")
     p2 = Processor("p2")
     p3 = Processor("p3")
@@ -158,3 +175,19 @@ if __name__ == "__main__":
     p3.add_bus(bus)
 
     p1.PrRd(7)
+    dump([p1, p2, p3], bus)
+
+    p2.PrRd(7)
+    dump([p1, p2, p3], bus)
+
+    p3.PrWr(7, 37)
+    dump([p1, p2, p3], bus)
+
+    p2.PrRd(7)
+    dump([p1, p2, p3], bus)
+
+    p1.PrWr(7, 17)
+    dump([p1, p2, p3], bus)
+    
+    p2.PrWr(7, 27)
+    dump([p1, p2, p3], bus)
