@@ -55,6 +55,13 @@ class Processor:
     def flush(self, addr):
         self.bus.BusWr(addr, self.cache[addr]["data"])
 
+
+    def dump(self):
+        print ("Dump for ", self.name)
+        for i in range(self.cache_size):
+            print (i, self.cache[i]["status"], self.cache[i]["data"])
+
+
     ######
     ## there are 4 possible inputs to the processor cache
     ## So in each case we will react to the pre-set rules and may generate output and transition to different state
@@ -104,7 +111,7 @@ class Processor:
             self.flush(addr)
             self.cache[addr]["status"] = "I"
         elif self.cache[addr]["status"] == "S":
-            pass
+            self.cache[addr]["status"] = "I"
 
 ''' 
 
@@ -155,8 +162,7 @@ Possible scenario
 
 def dump(p_lst, bus):
     for p in p_lst:
-        print (p.name)
-        print (p.cache)
+        p.dump()
     print (bus.mem)
 
 if __name__ == "__main__":
