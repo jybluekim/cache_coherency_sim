@@ -31,6 +31,7 @@ class msi_test(unittest.TestCase):
 
         
         for i in range(test_len):
+            print ("#### Starting new instruction")
             p = random.randint(0, p_count - 1)
             RW = random.randint(1, 10) # say 70% read, 30% write
             val = random.randint(1,100)
@@ -50,7 +51,7 @@ class msi_test(unittest.TestCase):
     def dump(self, p_lst, bus):
         for p in p_lst:
             p.dump()
-        print (bus.mem)
+        print ("Main memory: ", bus.mem, "\n")
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
