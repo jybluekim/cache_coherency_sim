@@ -20,7 +20,8 @@ class msi_test(unittest.TestCase):
             p.add_bus(bus)
          
 
-        test_len = 10
+        test_len = 20
+        addr_range = 10
 
         # randomness
         # 1. which processor
@@ -28,11 +29,12 @@ class msi_test(unittest.TestCase):
         # 3. In case of write, write value
         # 4. Address - we can start with fixed address
 
-        addr = 7
+        
         for i in range(test_len):
             p = random.randint(0, p_count - 1)
             RW = random.randint(1, 10) # say 70% read, 30% write
             val = random.randint(1,100)
+            addr = random.randint(0, addr_range - 1)
             if RW <= 7:
                 p_lst[p].PrRd(addr)
                 print ("Instruction number: ", i, ", PrRd for processor number ", p)
