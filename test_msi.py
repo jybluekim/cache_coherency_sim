@@ -4,11 +4,10 @@ import random
 
 
 class msi_test(unittest.TestCase):
-    def test_random(self):
+    def test_random(self, test_len = 20, addr_range = 10, p_count = 3):
 
 
         p_lst = []
-        p_count = 3
 
         bus = Bus()
         
@@ -19,10 +18,7 @@ class msi_test(unittest.TestCase):
             bus.add_processor(p)
             p.add_bus(bus)
          
-
-        test_len = 20
-        addr_range = 10
-
+ 
         # randomness
         # 1. which processor
         # 2. commands: PrRd, PrWr
