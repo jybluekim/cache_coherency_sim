@@ -37,10 +37,10 @@ class msi_test(unittest.TestCase):
             addr = random.randint(0, addr_range - 1)
             if RW <= 7:
                 p_lst[p].PrRd(addr)
-                print ("Instruction number: ", i, ", PrRd for processor number ", p)
+                print ("Instruction number: ", i, ", PrRd for processor number ", p, ", addr: ", addr)
             else:
                 p_lst[p].PrWr(addr, val)
-                print ("Instruction number: ", i, ", PrWr for processor number ", p, ", value: ", val)
+                print ("Instruction number: ", i, ", PrWr for processor number ", p, ", addr: ", addr, ", value: ", val)
             
             self.dump(p_lst, bus)
 
