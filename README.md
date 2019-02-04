@@ -1,4 +1,4 @@
-The purpose of this python program is to demonstrate how a very simple cache coherency protocol (MSI) works.
+The purpose of this python program is to demonstrate how a very simple cache coherency protocol (MSI) works. Note that _real_ systems use more complicated schemes (MESI, MESIF, MOESI, etc) but that is also what makes it hard for students to grasp core concepts. 
 
 You can just clone this repo and do the following:
 
