@@ -27,15 +27,15 @@ class Bus:
         for i in self.p_lst:
             if i != p:
                 i.BusRd(addr)
-            else:
-                return self.mem[addr]
+            
+        return self.mem[addr]
 
     def BusRdX(self, p, addr):
         for i in self.p_lst:
             if i != p:
                 i.BusRdX(addr)
-            else:
-                return self.mem[addr]
+            
+        return self.mem[addr]
 
     def BusWr(self, addr, val ):
         self.mem[addr] = val
