@@ -34,7 +34,7 @@ class msi_test(unittest.TestCase):
             print ("#### Starting new instruction")
             p = random.randint(0, p_count - 1)
             RW = random.randint(1, 10) # say 70% read, 30% write
-            val = random.randint(1,100)
+            val = random.randint(1000,2000)
             addr = random.randint(0, addr_range - 1)
             if RW <= 5:
                 p_lst[p].PrRd(addr)

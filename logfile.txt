@@ -1,5 +1,5 @@
 #### Starting new instruction
-Instruction number:  0 , PrRd for processor number  0 , addr:  6
+Instruction number:  0 , PrWr for processor number  2 , addr:  5 , value:  1052
 Dump for  p0
 0 I 0
 1 I 0
@@ -7,7 +7,7 @@ Dump for  p0
 3 I 0
 4 I 0
 5 I 0
-6 S 106
+6 I 0
 7 I 0
 8 I 0
 9 I 0
@@ -28,7 +28,7 @@ Dump for  p2
 2 I 0
 3 I 0
 4 I 0
-5 I 0
+5 M 1052
 6 I 0
 7 I 0
 8 I 0
@@ -36,7 +36,7 @@ Dump for  p2
 Main memory:  [100, 101, 102, 103, 104, 105, 106, 107, 108, 109] 
 
 #### Starting new instruction
-Instruction number:  1 , PrWr for processor number  1 , addr:  8 , value:  41
+Instruction number:  1 , PrWr for processor number  2 , addr:  4 , value:  1580
 Dump for  p0
 0 I 0
 1 I 0
@@ -44,7 +44,7 @@ Dump for  p0
 3 I 0
 4 I 0
 5 I 0
-6 S 106
+6 I 0
 7 I 0
 8 I 0
 9 I 0
@@ -57,15 +57,15 @@ Dump for  p1
 5 I 0
 6 I 0
 7 I 0
-8 M 41
+8 I 0
 9 I 0
 Dump for  p2
 0 I 0
 1 I 0
 2 I 0
 3 I 0
-4 I 0
-5 I 0
+4 M 1580
+5 M 1052
 6 I 0
 7 I 0
 8 I 0
@@ -73,7 +73,7 @@ Dump for  p2
 Main memory:  [100, 101, 102, 103, 104, 105, 106, 107, 108, 109] 
 
 #### Starting new instruction
-Instruction number:  2 , PrRd for processor number  1 , addr:  0
+Instruction number:  2 , PrWr for processor number  2 , addr:  6 , value:  1596
 Dump for  p0
 0 I 0
 1 I 0
@@ -81,12 +81,12 @@ Dump for  p0
 3 I 0
 4 I 0
 5 I 0
-6 S 106
+6 I 0
 7 I 0
 8 I 0
 9 I 0
 Dump for  p1
-0 S 100
+0 I 0
 1 I 0
 2 I 0
 3 I 0
@@ -94,23 +94,23 @@ Dump for  p1
 5 I 0
 6 I 0
 7 I 0
-8 M 41
+8 I 0
 9 I 0
 Dump for  p2
 0 I 0
 1 I 0
 2 I 0
 3 I 0
-4 I 0
-5 I 0
-6 I 0
+4 M 1580
+5 M 1052
+6 M 1596
 7 I 0
 8 I 0
 9 I 0
 Main memory:  [100, 101, 102, 103, 104, 105, 106, 107, 108, 109] 
 
 #### Starting new instruction
-Instruction number:  3 , PrWr for processor number  2 , addr:  5 , value:  55
+Instruction number:  3 , PrRd for processor number  1 , addr:  3
 Dump for  p0
 0 I 0
 1 I 0
@@ -118,49 +118,38 @@ Dump for  p0
 3 I 0
 4 I 0
 5 I 0
-6 S 106
+6 I 0
 7 I 0
 8 I 0
 9 I 0
 Dump for  p1
-0 S 100
+0 I 0
 1 I 0
 2 I 0
-3 I 0
+3 S 103
 4 I 0
 5 I 0
 6 I 0
 7 I 0
-8 M 41
+8 I 0
 9 I 0
 Dump for  p2
 0 I 0
 1 I 0
 2 I 0
 3 I 0
-4 I 0
-5 M 55
-6 I 0
+4 M 1580
+5 M 1052
+6 M 1596
 7 I 0
 8 I 0
 9 I 0
 Main memory:  [100, 101, 102, 103, 104, 105, 106, 107, 108, 109] 
 
 #### Starting new instruction
-Instruction number:  4 , PrWr for processor number  0 , addr:  1 , value:  57
+Instruction number:  4 , PrWr for processor number  1 , addr:  8 , value:  1033
 Dump for  p0
 0 I 0
-1 M 57
-2 I 0
-3 I 0
-4 I 0
-5 I 0
-6 S 106
-7 I 0
-8 I 0
-9 I 0
-Dump for  p1
-0 S 100
 1 I 0
 2 I 0
 3 I 0
@@ -168,573 +157,584 @@ Dump for  p1
 5 I 0
 6 I 0
 7 I 0
-8 M 41
+8 I 0
+9 I 0
+Dump for  p1
+0 I 0
+1 I 0
+2 I 0
+3 S 103
+4 I 0
+5 I 0
+6 I 0
+7 I 0
+8 M 1033
 9 I 0
 Dump for  p2
 0 I 0
 1 I 0
 2 I 0
 3 I 0
-4 I 0
-5 M 55
-6 I 0
+4 M 1580
+5 M 1052
+6 M 1596
 7 I 0
 8 I 0
 9 I 0
 Main memory:  [100, 101, 102, 103, 104, 105, 106, 107, 108, 109] 
 
 #### Starting new instruction
-Instruction number:  5 , PrWr for processor number  0 , addr:  0 , value:  42
+Instruction number:  5 , PrWr for processor number  0 , addr:  4 , value:  1088
 Dump for  p0
-0 M 42
-1 M 57
+0 I 0
+1 I 0
 2 I 0
 3 I 0
-4 I 0
+4 M 1088
 5 I 0
-6 S 106
+6 I 0
 7 I 0
 8 I 0
 9 I 0
 Dump for  p1
-0 I 100
+0 I 0
 1 I 0
 2 I 0
-3 I 0
+3 S 103
 4 I 0
 5 I 0
 6 I 0
 7 I 0
-8 M 41
+8 M 1033
 9 I 0
 Dump for  p2
 0 I 0
 1 I 0
 2 I 0
 3 I 0
-4 I 0
-5 M 55
-6 I 0
+4 I 1580
+5 M 1052
+6 M 1596
 7 I 0
 8 I 0
 9 I 0
-Main memory:  [100, 101, 102, 103, 104, 105, 106, 107, 108, 109] 
+Main memory:  [100, 101, 102, 103, 1580, 105, 106, 107, 108, 109] 
 
 #### Starting new instruction
-Instruction number:  6 , PrWr for processor number  2 , addr:  4 , value:  24
+Instruction number:  6 , PrRd for processor number  0 , addr:  7
 Dump for  p0
-0 M 42
-1 M 57
-2 I 0
-3 I 0
-4 I 0
-5 I 0
-6 S 106
-7 I 0
-8 I 0
-9 I 0
-Dump for  p1
-0 I 100
-1 I 0
-2 I 0
-3 I 0
-4 I 0
-5 I 0
-6 I 0
-7 I 0
-8 M 41
-9 I 0
-Dump for  p2
 0 I 0
 1 I 0
 2 I 0
 3 I 0
-4 M 24
-5 M 55
-6 I 0
-7 I 0
-8 I 0
-9 I 0
-Main memory:  [100, 101, 102, 103, 104, 105, 106, 107, 108, 109] 
-
-#### Starting new instruction
-Instruction number:  7 , PrWr for processor number  2 , addr:  6 , value:  94
-Dump for  p0
-0 M 42
-1 M 57
-2 I 0
-3 I 0
-4 I 0
-5 I 0
-6 I 106
-7 I 0
-8 I 0
-9 I 0
-Dump for  p1
-0 I 100
-1 I 0
-2 I 0
-3 I 0
-4 I 0
-5 I 0
-6 I 0
-7 I 0
-8 M 41
-9 I 0
-Dump for  p2
-0 I 0
-1 I 0
-2 I 0
-3 I 0
-4 M 24
-5 M 55
-6 M 94
-7 I 0
-8 I 0
-9 I 0
-Main memory:  [100, 101, 102, 103, 104, 105, 106, 107, 108, 109] 
-
-#### Starting new instruction
-Instruction number:  8 , PrRd for processor number  2 , addr:  5
-Dump for  p0
-0 M 42
-1 M 57
-2 I 0
-3 I 0
-4 I 0
-5 I 0
-6 I 106
-7 I 0
-8 I 0
-9 I 0
-Dump for  p1
-0 I 100
-1 I 0
-2 I 0
-3 I 0
-4 I 0
-5 I 0
-6 I 0
-7 I 0
-8 M 41
-9 I 0
-Dump for  p2
-0 I 0
-1 I 0
-2 I 0
-3 I 0
-4 M 24
-5 M 55
-6 M 94
-7 I 0
-8 I 0
-9 I 0
-Main memory:  [100, 101, 102, 103, 104, 105, 106, 107, 108, 109] 
-
-#### Starting new instruction
-Instruction number:  9 , PrRd for processor number  1 , addr:  7
-Dump for  p0
-0 M 42
-1 M 57
-2 I 0
-3 I 0
-4 I 0
-5 I 0
-6 I 106
-7 I 0
-8 I 0
-9 I 0
-Dump for  p1
-0 I 100
-1 I 0
-2 I 0
-3 I 0
-4 I 0
+4 M 1088
 5 I 0
 6 I 0
 7 S 107
-8 M 41
+8 I 0
+9 I 0
+Dump for  p1
+0 I 0
+1 I 0
+2 I 0
+3 S 103
+4 I 0
+5 I 0
+6 I 0
+7 I 0
+8 M 1033
 9 I 0
 Dump for  p2
 0 I 0
 1 I 0
 2 I 0
 3 I 0
-4 M 24
-5 M 55
-6 M 94
+4 I 1580
+5 M 1052
+6 M 1596
 7 I 0
 8 I 0
 9 I 0
-Main memory:  [100, 101, 102, 103, 104, 105, 106, 107, 108, 109] 
+Main memory:  [100, 101, 102, 103, 1580, 105, 106, 107, 108, 109] 
 
 #### Starting new instruction
-Instruction number:  10 , PrRd for processor number  0 , addr:  2
+Instruction number:  7 , PrWr for processor number  0 , addr:  5 , value:  1522
 Dump for  p0
-0 M 42
-1 M 57
-2 S 102
-3 I 0
-4 I 0
-5 I 0
-6 I 106
-7 I 0
-8 I 0
-9 I 0
-Dump for  p1
-0 I 100
+0 I 0
 1 I 0
 2 I 0
 3 I 0
-4 I 0
-5 I 0
+4 M 1088
+5 M 1522
 6 I 0
 7 S 107
-8 M 41
-9 I 0
-Dump for  p2
-0 I 0
-1 I 0
-2 I 0
-3 I 0
-4 M 24
-5 M 55
-6 M 94
-7 I 0
-8 I 0
-9 I 0
-Main memory:  [100, 101, 102, 103, 104, 105, 106, 107, 108, 109] 
-
-#### Starting new instruction
-Instruction number:  11 , PrWr for processor number  1 , addr:  7 , value:  55
-Dump for  p0
-0 M 42
-1 M 57
-2 S 102
-3 I 0
-4 I 0
-5 I 0
-6 I 106
-7 I 0
 8 I 0
 9 I 0
 Dump for  p1
-0 I 100
+0 I 0
 1 I 0
 2 I 0
-3 I 0
+3 S 103
 4 I 0
 5 I 0
 6 I 0
-7 M 55
-8 M 41
+7 I 0
+8 M 1033
 9 I 0
 Dump for  p2
 0 I 0
 1 I 0
 2 I 0
 3 I 0
-4 M 24
-5 M 55
-6 M 94
+4 I 1580
+5 I 1052
+6 M 1596
 7 I 0
 8 I 0
 9 I 0
-Main memory:  [100, 101, 102, 103, 104, 105, 106, 107, 108, 109] 
+Main memory:  [100, 101, 102, 103, 1580, 1052, 106, 107, 108, 109] 
 
 #### Starting new instruction
-Instruction number:  12 , PrWr for processor number  0 , addr:  6 , value:  14
+Instruction number:  8 , PrWr for processor number  0 , addr:  6 , value:  1134
 Dump for  p0
-0 M 42
-1 M 57
-2 S 102
+0 I 0
+1 I 0
+2 I 0
 3 I 0
-4 I 0
-5 I 0
-6 M 14
-7 I 0
+4 M 1088
+5 M 1522
+6 M 1134
+7 S 107
 8 I 0
 9 I 0
 Dump for  p1
-0 I 100
+0 I 0
 1 I 0
 2 I 0
-3 I 0
+3 S 103
 4 I 0
 5 I 0
 6 I 0
-7 M 55
-8 M 41
+7 I 0
+8 M 1033
 9 I 0
 Dump for  p2
 0 I 0
 1 I 0
 2 I 0
 3 I 0
-4 M 24
-5 M 55
-6 I 94
+4 I 1580
+5 I 1052
+6 I 1596
 7 I 0
 8 I 0
 9 I 0
-Main memory:  [100, 101, 102, 103, 104, 105, 94, 107, 108, 109] 
+Main memory:  [100, 101, 102, 103, 1580, 1052, 1596, 107, 108, 109] 
 
 #### Starting new instruction
-Instruction number:  13 , PrWr for processor number  1 , addr:  9 , value:  76
+Instruction number:  9 , PrRd for processor number  0 , addr:  6
 Dump for  p0
-0 M 42
-1 M 57
-2 S 102
+0 I 0
+1 I 0
+2 I 0
 3 I 0
-4 I 0
-5 I 0
-6 M 14
-7 I 0
+4 M 1088
+5 M 1522
+6 M 1134
+7 S 107
 8 I 0
 9 I 0
 Dump for  p1
-0 I 100
+0 I 0
 1 I 0
 2 I 0
-3 I 0
+3 S 103
 4 I 0
 5 I 0
 6 I 0
-7 M 55
-8 M 41
-9 M 76
+7 I 0
+8 M 1033
+9 I 0
 Dump for  p2
 0 I 0
 1 I 0
 2 I 0
 3 I 0
-4 M 24
-5 M 55
-6 I 94
+4 I 1580
+5 I 1052
+6 I 1596
 7 I 0
 8 I 0
 9 I 0
-Main memory:  [100, 101, 102, 103, 104, 105, 94, 107, 108, 109] 
+Main memory:  [100, 101, 102, 103, 1580, 1052, 1596, 107, 108, 109] 
 
 #### Starting new instruction
-Instruction number:  14 , PrWr for processor number  2 , addr:  4 , value:  82
+Instruction number:  10 , PrWr for processor number  0 , addr:  5 , value:  1712
 Dump for  p0
-0 M 42
-1 M 57
-2 S 102
+0 I 0
+1 I 0
+2 I 0
 3 I 0
-4 I 0
-5 I 0
-6 M 14
-7 I 0
+4 M 1088
+5 M 1712
+6 M 1134
+7 S 107
 8 I 0
 9 I 0
 Dump for  p1
-0 I 100
+0 I 0
 1 I 0
 2 I 0
-3 I 0
+3 S 103
 4 I 0
 5 I 0
 6 I 0
-7 M 55
-8 M 41
-9 M 76
+7 I 0
+8 M 1033
+9 I 0
 Dump for  p2
 0 I 0
 1 I 0
 2 I 0
 3 I 0
-4 M 82
-5 M 55
-6 I 94
+4 I 1580
+5 I 1052
+6 I 1596
 7 I 0
 8 I 0
 9 I 0
-Main memory:  [100, 101, 102, 103, 104, 105, 94, 107, 108, 109] 
+Main memory:  [100, 101, 102, 103, 1580, 1052, 1596, 107, 108, 109] 
 
 #### Starting new instruction
-Instruction number:  15 , PrRd for processor number  2 , addr:  7
+Instruction number:  11 , PrWr for processor number  2 , addr:  8 , value:  1207
 Dump for  p0
-0 M 42
-1 M 57
-2 S 102
+0 I 0
+1 I 0
+2 I 0
 3 I 0
-4 I 0
-5 I 0
-6 M 14
-7 I 0
+4 M 1088
+5 M 1712
+6 M 1134
+7 S 107
 8 I 0
 9 I 0
 Dump for  p1
-0 I 100
+0 I 0
 1 I 0
 2 I 0
-3 I 0
+3 S 103
 4 I 0
 5 I 0
 6 I 0
-7 S 55
-8 M 41
-9 M 76
+7 I 0
+8 I 1033
+9 I 0
 Dump for  p2
 0 I 0
 1 I 0
 2 I 0
 3 I 0
-4 M 82
-5 M 55
-6 I 94
-7 S 55
-8 I 0
+4 I 1580
+5 I 1052
+6 I 1596
+7 I 0
+8 M 1207
 9 I 0
-Main memory:  [100, 101, 102, 103, 104, 105, 94, 55, 108, 109] 
+Main memory:  [100, 101, 102, 103, 1580, 1052, 1596, 107, 1033, 109] 
 
 #### Starting new instruction
-Instruction number:  16 , PrRd for processor number  1 , addr:  5
+Instruction number:  12 , PrRd for processor number  0 , addr:  9
 Dump for  p0
-0 M 42
-1 M 57
-2 S 102
-3 I 0
-4 I 0
-5 I 0
-6 M 14
-7 I 0
-8 I 0
-9 I 0
-Dump for  p1
-0 I 100
+0 I 0
 1 I 0
 2 I 0
 3 I 0
+4 M 1088
+5 M 1712
+6 M 1134
+7 S 107
+8 I 0
+9 S 109
+Dump for  p1
+0 I 0
+1 I 0
+2 I 0
+3 S 103
 4 I 0
-5 S 55
+5 I 0
 6 I 0
-7 S 55
-8 M 41
-9 M 76
+7 I 0
+8 I 1033
+9 I 0
 Dump for  p2
 0 I 0
 1 I 0
 2 I 0
 3 I 0
-4 M 82
-5 S 55
-6 I 94
-7 S 55
-8 I 0
+4 I 1580
+5 I 1052
+6 I 1596
+7 I 0
+8 M 1207
 9 I 0
-Main memory:  [100, 101, 102, 103, 104, 55, 94, 55, 108, 109] 
+Main memory:  [100, 101, 102, 103, 1580, 1052, 1596, 107, 1033, 109] 
 
 #### Starting new instruction
-Instruction number:  17 , PrWr for processor number  2 , addr:  1 , value:  55
+Instruction number:  13 , PrRd for processor number  0 , addr:  5
 Dump for  p0
-0 M 42
-1 I 57
-2 S 102
-3 I 0
-4 I 0
-5 I 0
-6 M 14
-7 I 0
-8 I 0
-9 I 0
-Dump for  p1
-0 I 100
+0 I 0
 1 I 0
 2 I 0
 3 I 0
+4 M 1088
+5 M 1712
+6 M 1134
+7 S 107
+8 I 0
+9 S 109
+Dump for  p1
+0 I 0
+1 I 0
+2 I 0
+3 S 103
 4 I 0
-5 S 55
+5 I 0
 6 I 0
-7 S 55
-8 M 41
-9 M 76
+7 I 0
+8 I 1033
+9 I 0
 Dump for  p2
 0 I 0
-1 M 55
+1 I 0
 2 I 0
 3 I 0
-4 M 82
-5 S 55
-6 I 94
-7 S 55
-8 I 0
+4 I 1580
+5 I 1052
+6 I 1596
+7 I 0
+8 M 1207
 9 I 0
-Main memory:  [100, 57, 102, 103, 104, 55, 94, 55, 108, 109] 
+Main memory:  [100, 101, 102, 103, 1580, 1052, 1596, 107, 1033, 109] 
 
 #### Starting new instruction
-Instruction number:  18 , PrWr for processor number  1 , addr:  9 , value:  76
+Instruction number:  14 , PrWr for processor number  2 , addr:  8 , value:  1165
 Dump for  p0
-0 M 42
-1 I 57
-2 S 102
-3 I 0
-4 I 0
-5 I 0
-6 M 14
-7 I 0
-8 I 0
-9 I 0
-Dump for  p1
-0 I 100
+0 I 0
 1 I 0
 2 I 0
 3 I 0
+4 M 1088
+5 M 1712
+6 M 1134
+7 S 107
+8 I 0
+9 S 109
+Dump for  p1
+0 I 0
+1 I 0
+2 I 0
+3 S 103
 4 I 0
-5 S 55
+5 I 0
 6 I 0
-7 S 55
-8 M 41
-9 M 76
+7 I 0
+8 I 1033
+9 I 0
 Dump for  p2
 0 I 0
-1 M 55
+1 I 0
 2 I 0
 3 I 0
-4 M 82
-5 S 55
-6 I 94
-7 S 55
-8 I 0
+4 I 1580
+5 I 1052
+6 I 1596
+7 I 0
+8 M 1165
 9 I 0
-Main memory:  [100, 57, 102, 103, 104, 55, 94, 55, 108, 109] 
+Main memory:  [100, 101, 102, 103, 1580, 1052, 1596, 107, 1033, 109] 
 
 #### Starting new instruction
-Instruction number:  19 , PrWr for processor number  0 , addr:  8 , value:  35
+Instruction number:  15 , PrWr for processor number  0 , addr:  2 , value:  1359
 Dump for  p0
-0 M 42
-1 I 57
-2 S 102
+0 I 0
+1 I 0
+2 M 1359
 3 I 0
+4 M 1088
+5 M 1712
+6 M 1134
+7 S 107
+8 I 0
+9 S 109
+Dump for  p1
+0 I 0
+1 I 0
+2 I 0
+3 S 103
 4 I 0
 5 I 0
-6 M 14
+6 I 0
 7 I 0
-8 M 35
+8 I 1033
 9 I 0
-Dump for  p1
-0 I 100
+Dump for  p2
+0 I 0
 1 I 0
 2 I 0
 3 I 0
+4 I 1580
+5 I 1052
+6 I 1596
+7 I 0
+8 M 1165
+9 I 0
+Main memory:  [100, 101, 102, 103, 1580, 1052, 1596, 107, 1033, 109] 
+
+#### Starting new instruction
+Instruction number:  16 , PrWr for processor number  0 , addr:  5 , value:  1573
+Dump for  p0
+0 I 0
+1 I 0
+2 M 1359
+3 I 0
+4 M 1088
+5 M 1573
+6 M 1134
+7 S 107
+8 I 0
+9 S 109
+Dump for  p1
+0 I 0
+1 I 0
+2 I 0
+3 S 103
 4 I 0
-5 S 55
+5 I 0
 6 I 0
-7 S 55
-8 I 41
-9 M 76
+7 I 0
+8 I 1033
+9 I 0
 Dump for  p2
 0 I 0
-1 M 55
+1 I 0
 2 I 0
 3 I 0
-4 M 82
-5 S 55
-6 I 94
-7 S 55
-8 I 0
+4 I 1580
+5 I 1052
+6 I 1596
+7 I 0
+8 M 1165
 9 I 0
-Main memory:  [100, 57, 102, 103, 104, 55, 94, 55, 41, 109] 
+Main memory:  [100, 101, 102, 103, 1580, 1052, 1596, 107, 1033, 109] 
+
+#### Starting new instruction
+Instruction number:  17 , PrRd for processor number  0 , addr:  1
+Dump for  p0
+0 I 0
+1 S 101
+2 M 1359
+3 I 0
+4 M 1088
+5 M 1573
+6 M 1134
+7 S 107
+8 I 0
+9 S 109
+Dump for  p1
+0 I 0
+1 I 0
+2 I 0
+3 S 103
+4 I 0
+5 I 0
+6 I 0
+7 I 0
+8 I 1033
+9 I 0
+Dump for  p2
+0 I 0
+1 I 0
+2 I 0
+3 I 0
+4 I 1580
+5 I 1052
+6 I 1596
+7 I 0
+8 M 1165
+9 I 0
+Main memory:  [100, 101, 102, 103, 1580, 1052, 1596, 107, 1033, 109] 
+
+#### Starting new instruction
+Instruction number:  18 , PrWr for processor number  2 , addr:  2 , value:  1248
+Dump for  p0
+0 I 0
+1 S 101
+2 I 1359
+3 I 0
+4 M 1088
+5 M 1573
+6 M 1134
+7 S 107
+8 I 0
+9 S 109
+Dump for  p1
+0 I 0
+1 I 0
+2 I 0
+3 S 103
+4 I 0
+5 I 0
+6 I 0
+7 I 0
+8 I 1033
+9 I 0
+Dump for  p2
+0 I 0
+1 I 0
+2 M 1248
+3 I 0
+4 I 1580
+5 I 1052
+6 I 1596
+7 I 0
+8 M 1165
+9 I 0
+Main memory:  [100, 101, 1359, 103, 1580, 1052, 1596, 107, 1033, 109] 
+
+#### Starting new instruction
+Instruction number:  19 , PrWr for processor number  0 , addr:  9 , value:  1054
+Dump for  p0
+0 I 0
+1 S 101
+2 I 1359
+3 I 0
+4 M 1088
+5 M 1573
+6 M 1134
+7 S 107
+8 I 0
+9 M 1054
+Dump for  p1
+0 I 0
+1 I 0
+2 I 0
+3 S 103
+4 I 0
+5 I 0
+6 I 0
+7 I 0
+8 I 1033
+9 I 0
+Dump for  p2
+0 I 0
+1 I 0
+2 M 1248
+3 I 0
+4 I 1580
+5 I 1052
+6 I 1596
+7 I 0
+8 M 1165
+9 I 0
+Main memory:  [100, 101, 1359, 103, 1580, 1052, 1596, 107, 1033, 109] 
 
