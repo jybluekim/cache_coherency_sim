@@ -36,7 +36,7 @@ class msi_test(unittest.TestCase):
             RW = random.randint(1, 10) # say 70% read, 30% write
             val = random.randint(1,100)
             addr = random.randint(0, addr_range - 1)
-            if RW <= 7:
+            if RW <= 5:
                 p_lst[p].PrRd(addr)
                 print ("Instruction number: ", i, ", PrRd for processor number ", p, ", addr: ", addr)
             else:
